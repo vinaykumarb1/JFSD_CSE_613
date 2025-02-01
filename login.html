@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* General Styling */
+        body {
+            display:flex ;
+            justify-content: center;
+            height:100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .login-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-container form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .login-container form input {
+            margin: 5px 0;
+            padding: 0.5rem;
+            width: 100%;
+        }
+        
+        .login-container form button {
+            margin-top: 10px;
+            padding: 0.5rem;
+            width: 107%;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Form Section -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="return handleLogin(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Perform simple validation (you might want to add more robust validation)
+            if (username === "user" && password === "password") {
+                // Redirect to the main website after successful login
+                window.location.href = "main.html";
+            } else {
+                alert('Invalid username or password');
+            }
+        }
+    </script>
+</body>
+</html>
