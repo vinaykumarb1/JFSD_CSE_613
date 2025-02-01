@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Centering Apps */
+        .app-container {
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center; /* Centers vertically */
+            height: 60vh; /* Adjust height to push apps to middle */
+            flex-direction: column;
+        }
+
+        .app-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between icons */
+            margin-top: 20px;
+        }
+
+        .app-row a img {
+            width: 70px; /* Adjust size */
+            height: 70px;
+            transition: transform 0.3s;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+      
+             <a href="https://alliance.edu.in/" target="_main" class="Alliance University logo"> 
+                <img src="https://th.bing.com/th/id/OIP.-pTGKuiSxDkDPgurfa3N8QHaHv?rs=1&pid=ImgDetMain width/" width=50 height =50 alt="Alliance University logo"></a> 
+                <h1>Welcome to Alliance University </h1>
+                </header>
+    </header>
+
+    <!-- Centered Apps Section -->
+    <div class="app-container">
+        <h2>Your Apps</h2>
+        
+        <div class="app-row">
+            <a href="https://www.linkedin.com/feed/" target="_main" alt="LinkedIn">
+                <img src="https://th.bing.com/th/id/OIP.1rcgEvLWkAxsX2DsZZpSoQHaHa?pid=ImgDet&w=207&h=207&c=7" alt="LinkedIn">
+            </a>
+            <a href="https://alliance.blackboard.com/?new_loc=%2Fultra%2Fcourse" target="_main" alt="Blackboard">
+                <img src="https://www.class.com/wp-content/uploads/2024/03/class-and-blackboard-enhanced-lms-logo.png" alt="Blackboard">
+            <a href="https://github.com/" target="_main" alt="GitHub">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+            </a>
+            <a href="https://au.icloudems.com " target="_main" alt="AU CloudEMS">
+                <img src="https://play-lh.googleusercontent.com/9_QKDE-rt3vbAn1VUqtfAv4t29-UItPCYdRbzieK07aUy1rcpM_BOMzh5Dtrob0MXg" alt="AU CloudEMS">
+            </a>
+            <a href="https://alliance.quizr.in/" target="_main" alt="quizr">   
+                <img src="https://lh3.googleusercontent.com/3GkhI3kojJHat0MABLP6UGHOhju_d4rTevqQGd4--C5cWxt9h5bmuzpflaE5jUq4D7xz" alt="quizr">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Vinay Kumar B <img</p>   
+        <img src=C  width="15" height="15" alt=" "/>
+</body>
+</html>
