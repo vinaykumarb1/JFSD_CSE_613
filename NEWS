@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+    display:flex;
+    height:400px;
+    width:400px;
+    border:2px solid rgb(15, 1, 1);
+    flex-direction:row;
+    justify-content:center;
+}
+
+p{
+    border:1px solid;
+}
+</style>
+<body>
+    <div>
+     <p>What's new in WPL 2025?
+
+        RCB have been hit by player unavailability and injury concerns heading into the season. Sophie Devine is on a break, left-arm spinner Sophie Molineux is out injured and Kate Cross has withdrawn from the season for injury rehab. Their star allrounder Ellyse Perry also recently sustained a hip injury during the Ashes but she has arrived in Bengaluru ahead of the team's departure to Baroda. Spinners Asha Sobhana and Shreyanka Patil have been recuperating from injuries and haven't played international cricket since October 2024. Devine, Molineux, Perry and Asha had all played crucial roles in RCB's win last year.</p>
+        <img src =
