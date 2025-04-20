@@ -1,0 +1,453 @@
+app.css
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top:0;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+header ul{
+  width: 40%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header ul li{
+  list-style: none;
+  cursor: pointer;
+}
+
+li a{
+  color: black;
+  transition: all 0.3s;
+  padding:2px 10px;
+  border-radius: 10px;
+}
+
+li a:hover{
+  color:black;
+}
+
+li .login{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header h2{
+  margin-left: 1rem;
+}
+
+section{
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.home{
+  display: flex;
+  margin-top: 6rem;
+  gap:10rem;
+  position: relative;
+}
+
+.home .left h1{
+  margin-bottom: 1rem;
+}
+
+.home button{
+  color: white;
+  border:none;
+  background-color: #213547;
+  width: 200px;
+  padding: 0.5rem;
+  border-radius: 0;
+}
+
+.home a:hover{
+  color: white;
+  background-color: #2c4860;
+}
+
+.home .left h5{
+  margin:2rem 0;
+}
+
+.bg svg{
+  position: absolute;
+  bottom: 0;
+}
+
+.card-container{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  gap:2.5rem;
+  grid-template-columns: repeat(auto-fit,13rem);
+  cursor:pointer
+}
+
+.card{
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card-body{
+  background-color: #d4f6e8;
+  padding: 1rem;
+}
+
+.card-body .title{
+  margin-bottom:5px;
+  font-size: 15px;
+  font-weight:500;
+}
+
+.card-body .icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body .timer{
+  display: flex;
+  align-items: center;
+  gap:2px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.action{
+  display: flex;
+  font-size: 19px;
+  justify-content: space-between;
+  align-items: center;
+  width: 45px;
+}
+
+.editIcon{
+  color: black;
+  font-size: 18px;
+}
+
+.action a:hover{
+  color: black;
+}
+
+.deleteIcon{
+  color: rgb(239,53,53);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal{
+  position: fixed;
+  top: 34%;
+  z-index: 10;
+  padding: 2rem;
+  border-radius: 6px;
+  border:none;
+  left:30%;
+  width: 40%;
+}
+
+.backdrop{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 9;
+}
+
+.form{
+  width: 71%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-header{
+  background-color: #d4f6e8;
+  height: 3px;
+  text-align: center;
+}
+
+.form-control{
+  display: flex;
+  justify-content: space-between;
+  gap:1rem;
+  margin-top: 1rem;
+}
+
+.form-control .input{
+  flex-basis: 70%;
+  border:1px solid rgb(156 163 175);
+  border-radius: 4px;
+  height: 30px;
+  padding: 2px;
+}
+
+.form-control .input-textarea{
+  border: 1px solid rgb(156 163 175);
+  border-radius: 4px;
+  flex-basis: 70%;
+  padding: 2px;
+}
+
+.form button{
+  margin:2rem 0;
+  border:none;
+  background-color: #d4f6e8;
+  font-size: 14px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form p{
+  cursor: pointer;
+  display: inline;
+  border-bottom: 1px solid #307bbd;
+  color:rga(4,136,170);
+  font-size: 14px;
+  color: #307bbd;
+}
+
+.form .error{
+  color:red;
+  font-size: 13px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.add-recipe{
+  width: 100%;
+}
+
+.recipe{
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer{
+  width:100vw;
+  height: 30px;
+  color: white;
+  background-color: #213547;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 2px;
+  font-size: 14px;
+}
+
+.outer-container{
+  width: 70%;
+  margin: 5rem auto;
+}
+
+.outer-container .profile{
+  display: flex;
+  gap:1rem;
+  align-items: center;
+}
+
+.outer-container .title{
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.outer-container .recipe-details{
+  display: flex;
+  gap: 3rem;
+  align-items: justify;
+  margin-top: 1rem;
+}
+
+.active{
+  color:black !important;
+  background-color: #d4f6e8;
+}
+
+app.jsx
+
+import React from 'react'
+import './App.css'
+import {createBrowserRouter,RouterProvider} from "react-router-dom"
+import Home from './pages/Home'
+import MainNavigation from './components/MainNavigation'
+import axios from 'axios'
+import  AddFoodRecipe  from './pages/AddFoodRecipe'
+import EditRecipe from './pages/EditRecipe'
+import RecipeDetails from './pages/RecipeDetails'
+
+
+const getAllRecipes=async()=>{
+  let allRecipes=[]
+  await axios.get('http://localhost:5000/recipe').then(res=>{
+    allRecipes=res.data
+  })
+  return allRecipes
+}
+
+const getMyRecipes=async()=>{
+  let user=JSON.parse(localStorage.getItem("user"))
+  let allRecipes=await getAllRecipes()
+  return allRecipes.filter(item=>item.createdBy===user._id)
+}
+
+const getFavRecipes=()=>{
+  return JSON.parse(localStorage.getItem("fav"))
+}
+
+const getRecipe=async({params})=>{
+  let recipe;
+  await axios.get(`http://localhost:5000/recipe/${params.id}`)
+  .then(res=>recipe=res.data)
+
+  await axios.get(`http://localhost:5000/user/${recipe.createdBy}`)
+  .then(res=>{
+    recipe={...recipe,email:res.data.email}
+  })
+
+  return recipe
+}
+
+const router=createBrowserRouter([
+  {path:"/",element:<MainNavigation/>,children:[
+    {path:"/",element:<Home/>,loader:getAllRecipes},
+    {path:"/myRecipe",element:<Home/>,loader:getMyRecipes},
+    {path:"/favRecipe",element:<Home/>,loader:getFavRecipes},
+    {path:"/addRecipe",element:<AddFoodRecipe/>},
+    {path:"/editRecipe/:id",element:<EditRecipe/>},
+    {path:"/recipe/:id",element:<RecipeDetails/>,loader:getRecipe}
+  ]}
+ 
+])
+
+export default function App() {
+  return (
+   <>
+   <RouterProvider router={router}></RouterProvider>
+   </>
+  )
+}
+
+
+index.css
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+main.jsx
+
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+
+vite.config.js
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
+
+
+
+
